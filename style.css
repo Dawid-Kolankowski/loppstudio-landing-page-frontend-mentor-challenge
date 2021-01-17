@@ -38,6 +38,12 @@ h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: white;
+}
+
 p {
   font-size: 1.188rem;
   color: #8c8c8c;
@@ -112,16 +118,106 @@ p {
   position: relative;
 }
 
+.info .relative {
+  position: relative;
+}
+
 .info__image {
   width: 45.75rem;
 }
 
 .info__leader {
   position: absolute;
-  right: 0;
+  right: -6.063rem;
   bottom: -6.063rem;
   padding: 6.063rem;
   max-width: 44.06rem;
   background: white;
+}
+
+.creations {
+  margin-top: 11.56rem;
+}
+
+.creations__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5.75rem;
+}
+
+.creations__button {
+  border: 1px solid #8c8c8c;
+  height: 3rem;
+  background-color: white;
+  width: 9.875rem;
+  height: 2.625rem;
+  color: black;
+  font-family: 'Alata', sans-serif;
+}
+
+.creations__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.creations__cards > div {
+  background-size: cover;
+  margin-bottom: 2rem;
+  width: 16rem;
+  height: 28.13rem;
+  padding: 2.5rem;
+  position: relative;
+}
+
+.creations__cards > div::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-size: cover;
+  background-position: top center;
+}
+
+.creations__cards > div > h3 {
+  position: absolute;
+  bottom: 2.5rem;
+}
+
+.creations__cards div:nth-child(1) {
+  background-image: url("./images/desktop/1.jpg");
+}
+
+.creations__cards div:nth-child(2) {
+  background-image: url("./images/desktop/2.jpg");
+}
+
+.creations__cards div:nth-child(3) {
+  background-image: url("./images/desktop/3.jpg");
+}
+
+.creations__cards div:nth-child(4) {
+  background-image: url("./images/desktop/4.jpg");
+}
+
+.creations__cards div:nth-child(5) {
+  background-image: url("./images/desktop/5.jpg");
+}
+
+.creations__cards div:nth-child(6) {
+  background-image: url("./images/desktop/6.jpg");
+}
+
+.creations__cards div:nth-child(7) {
+  background-image: url("./images/desktop/7.jpg");
+}
+
+.creations__cards div:nth-child(8) {
+  background-image: url("./images/desktop/8.jpg");
 }
 /*# sourceMappingURL=style.css.map */

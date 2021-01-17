@@ -1,0 +1,78 @@
+.info {
+  .relative {
+    position: relative;
+  }
+  margin-top: 10rem;
+
+  position: relative;
+  &__image {
+    width: 45.75rem;
+  }
+
+  &__leader {
+    position: absolute;
+    right: -6.063rem;
+    bottom: -6.063rem;
+    padding: 6.063rem;
+    max-width: 44.06rem;
+    background: $white;
+  }
+}
+.creations {
+  margin-top: 11.56rem;
+  &__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5.75rem;
+  }
+
+  &__button {
+    border: 1px solid $darkGray;
+    height: 3rem;
+    background-color: white;
+    width: 9.875rem;
+    height: 2.625rem;
+    color: $black;
+    font-family: 'Alata', sans-serif;
+  }
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 100vh;
+
+    > div {
+      background-size: cover;
+      margin-bottom: 2rem;
+      width: 16rem;
+      height: 28.13rem;
+      padding: 2.5rem;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+        );
+        background-size: cover;
+        background-position: top center;
+      }
+      > h3 {
+        position: absolute;
+        bottom: 2.5rem;
+      }
+    }
+
+    @for $i from 1 through 8 {
+      & div:nth-child(#{$i}) {
+        background-image: url('./images/desktop/#{$i}.jpg');
+      }
+    }
+  }
+}
