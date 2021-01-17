@@ -1,0 +1,17 @@
+.info {
+  margin-top: 10rem;
+
+  position: relative;
+  &__image {
+    width: 45.75rem;
+  }
+
+  &__leader {
+    position: absolute;
+    right: 0;
+    bottom: -6.063rem;
+    padding: 6.063rem;
+    max-width: 44.06rem;
+    background: $white;
+  }
+}
