@@ -19,11 +19,26 @@
   <body>
     <header class="container hero">
       <nav>
-        <a href="#">
-          <img src="images/logo.svg" alt="Loopstudios" class="nav__logo" />
+        <a class ="nav__logo" href="#">
+          <img src="images/logo.svg" alt="Loopstudios"  />
         </a>
-        <div class="nav__menu"></div>
-        <div class="nav__links">
+        
+
+        <a id="btnHamburger" href="#" class="nav__toggle hide-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <div class="nav__menu display-none">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+          <a href="">Blog</a>
+          <a href="">Careers</a>
+        </div>
+
+        <div class="nav__links hide-mobile">
           <a href="#">About</a>
           <a href="#">Careers</a>
           <a href="#">Events</a>
@@ -60,7 +75,7 @@
       <section class="creations">
         <div class="creations__bar">
           <h2>our creations</h2>
-          <button class="creations__button">SEE ALL</button>
+          <button class="creations__button hide-mobile">SEE ALL</button>
         </div>
         <div class="creations__cards">
           <div><h3>Deep </br>earth</h3></div>
@@ -72,6 +87,7 @@
           <div><h3>the</br>curiosity</h3></div>
           <div><h3>make it </br>fisheye</h3></div>
         </div>
+        <button class="creations__button hide-desktop" style="margin:auto">SEE ALL</button>
       </section>
     </main>
 
@@ -81,4 +97,5 @@
     Loopstudios. All rights reserved. -->
   </body>
   <link rel="stylesheet" href="/style.css" />
+  <script src="index.js"></script>
 </html>

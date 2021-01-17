@@ -6,3 +6,7 @@ $font-sm: 1rem;
 $font-md: 1.188rem;
 $font-lg: 3.313rem;
 $font-vlg: 5.375rem;
+
+@media (max-width: 48.3rem) {
+  $font-vlg: 1.813rem;
+}

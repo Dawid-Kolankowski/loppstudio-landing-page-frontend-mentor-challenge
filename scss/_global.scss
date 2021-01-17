@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 90rem;
   margin: 0 auto;
   > nav,
   > div,
@@ -47,4 +47,49 @@ p {
   font-size: $font-md;
   color: $darkGray;
   font-family: 'Alata', sans-serif;
+}
+
+@media (max-width: 48.3rem) {
+  .container {
+    padding: 1.5rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 90rem) {
+  .container {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 23rem) {
+  .container {
+    padding: 1.5rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 20.1rem) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
 }
